@@ -1,5 +1,5 @@
 {
-  "name": "express-gateway-plugin-example",
+  "name": "express-gateway-plugin-test",
   "version": "1.0.1",
   "description": "Plugin Example for Express Gateway",
   "main": "manifest.js",
