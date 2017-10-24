@@ -7,17 +7,15 @@ module.exports = {
       var token = req.query.token || req.headers['x-access-token'];
       if (token) {
         jwt.verify(token, actionParams.secret, function(err, decoded) {
-          if (err) return res.json({message: err.message}, 403).end();
+          if (err) res.status(403).json({message: err.message}).end();
           else {
             req.decoded = decoded;
             next();
           }
         });
       } else {
-        return res.json({message: 'No token provided'}, 403);
+        res.status(403).json({message: 'No token provided'}).end();
       }
-      console.log('policy', req.query);
-      next();
     };
   }
 };
