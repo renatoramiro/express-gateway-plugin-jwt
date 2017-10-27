@@ -3,7 +3,7 @@ module.exports = {
   init: function (pluginContext) {
     pluginContext.registerPolicy(require('./policies/example-policy'));
   },
-  policies:['test'], // this is for CLI to automatically add to "policies" whitelist in gateway.config
+  policies:['jwt'], // this is for CLI to automatically add to "policies" whitelist in gateway.config
   options: {  // This is for CLI to ask about params 'eg plugin configure example'
     secret: {
       title: 'Secret',

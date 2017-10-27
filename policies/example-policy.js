@@ -1,7 +1,7 @@
 var jwt = require('jsonwebtoken');
 
 module.exports = {
-  name: 'test',
+  name: 'jwt',
   policy: (actionParams) => {
     return (req, res, next) => {
       var token = req.query.token || req.headers['x-access-token'];
