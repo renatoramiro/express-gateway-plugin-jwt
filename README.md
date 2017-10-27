@@ -1,7 +1,5 @@
 # express-gateway-plugin-jwt
-Simple jwt plugin for [Express Gateway](http://www.express-gateway.io/)
-
-It shows all extension points available in the Express Gateway Plugin Engine 1.2.0
+Simple JWT plugin for [Express Gateway](http://www.express-gateway.io/)
 
 ### Installing this plugin
 ```bash
